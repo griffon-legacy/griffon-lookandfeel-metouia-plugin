@@ -14,24 +14,15 @@
  * limitations under the License.
  */
 
+package griffon.lookandfeel.metouia
+
+import griffon.lookandfeel.AbstractLookAndFeelTestCase
+
 /**
  * @author Andres Almiray
  */
-class LookandfeelMetouiaGriffonPlugin {
-    def version = 0.1
-    def griffonVersion = '0.3.2 > *'
-    def dependsOn = [lookandfeel: 0.1]
-    def toolkits = ['swing']
-    def license = 'Apache Software License 2.0'
-
-    def author = 'Andres Almiray'
-    def authorEmail = 'aalmiray@users.sourceforge.net'
-    def title = 'Metouia Swing Look & Feel'
-    def description = '''
-Metouia Swing Look & Feel.
-'''
-
-    // URL to the plugin's documentation
-    def documentation = 'http://griffon.codehaus.org/Lookandfeel+Metouia+Plugin'
+class MetouiaLookAndFeelTests extends AbstractLookAndFeelTestCase {
+    void testMetouiaMetouiaLookAndFeel() {
+        setAndTestLookAndFeel('Metouia', 'Metouia')
+    }
 }
-
